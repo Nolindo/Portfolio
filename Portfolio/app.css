@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #111;
+  background: black;
   color: #eee;
   overflow-x: hidden;
 }
@@ -312,9 +312,8 @@ header {
   transform: translateY(-3px);
   background: #e36dd8;
 }
-
-
-.contact-page .download-btn { text-decoration: none; display:inline-block; line-height:normal; }
+.contact-page .download-btn { 
+  text-decoration: none; display:inline-block; line-height:normal; }
 
 
 @media (max-width: 520px) {
@@ -324,4 +323,26 @@ header {
   .contact-page .btn-group { flex-direction: column; }
   .contact-page .btn { width: 100%; }
 }
+body.light-mode {
+  background: burlywood;
+  color: #222;
+}
+body.light-mode p,
+body.light-mode .logo-text,
+body.light-mode .highlight{
+    color: brown;
+}
+
+.mode-btn {
+  background: transparent;
+  border-radius: 50%;
+  color: #e36dd8;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+ .inline-heading {
+  display: inline-block;
+  margin-right: 10px; 
+  }
 

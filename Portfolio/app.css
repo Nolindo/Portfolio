@@ -312,6 +312,8 @@ header {
   transform: translateY(-3px);
   background: #e36dd8;
 }
+
+
 .contact-page .download-btn { 
   text-decoration: none; display:inline-block; line-height:normal; }
 
@@ -346,3 +348,29 @@ body.light-mode .highlight{
   margin-right: 10px; 
   }
 
+.success-message {
+  text-align: center;
+  padding: 40px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.success-message h3 {
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.send-another-btn {
+  background-color: #5c4b3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.send-another-btn:hover {
+  background-color: #4a392d;
+}

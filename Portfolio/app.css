@@ -374,3 +374,161 @@ body.light-mode .highlight{
 .send-another-btn:hover {
   background-color: #4a392d;
 }
+
+.skills-container {
+  min-height: 100vh;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.skill-name {
+  font-weight: 600;
+  color: #fff;
+}
+
+.skill-bar {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #6b5df6, #e36dd8);
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+}
+
+.skill-percent {
+  font-size: 0.9rem;
+  color: #ccc;
+  align-self: flex-end;
+}
+#skillsSection h2 {
+  font-size: 1.8rem;
+  margin: 0 0 18px;
+  font-weight: 700;
+  color: #e36dd8;  
+  text-align: center;     
+  padding-top: 90px;
+}
+.edu-cert-section {
+  background-color: black;
+  font-family: 'Poppins', sans-serif;
+  max-width: 900px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-top: 80px;
+  
+  }
+
+.edu-cert-container {
+  display: flex;
+  gap: 20px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  
+  background:black;
+}
+
+.education-side, 
+.certification-side {
+  flex: 1;
+}
+
+.education-side {
+  border-right: 2px solid #ccc;
+  padding-right: 30px;
+}
+
+.certification-side {
+  padding-left: 30px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #e36dd8;
+  margin-bottom: 15px;
+  border-left: 5px solid #e36dd8;
+  padding-left: 10px;
+}
+
+.education-item, 
+.cert-item {
+  margin-bottom: 25px;
+}
+
+.quote {
+  font-style: italic;
+  color: #555;
+  background: #eef6ff;
+  padding: 10px 15px;
+  border-left: 4px solid #e36dd8;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.date {
+  color: #e36dd8;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .edu-cert-container {
+    flex-direction: column;
+  }
+
+  .education-side {
+    border-right: none;
+    border-bottom: 2px solid #ccc;
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+
+  .certification-side {
+    padding-left: 0;
+    padding-top: 30px;
+  }
+}
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* show hamburger icon */
+  }
+
+  .nav-links {
+    display: none; /* hide links initially */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: #0078d7;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-top: 2px solid white;
+  }

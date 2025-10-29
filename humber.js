@@ -1,4 +1,3 @@
-// ===== HAMBURGER MENU FUNCTIONALITY =====
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.getElementById("menu-toggle");
   const navLinks = document.querySelector(".nav-links");

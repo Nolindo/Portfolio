@@ -1,5 +1,3 @@
-
-
 (function () {
   const THEME_KEY = 'theme';
   const body = document.body;

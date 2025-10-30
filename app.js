@@ -96,4 +96,50 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", async () => {
+  const username = "Nolindo";
+  const avatarUrl = "https://avatars.githubusercontent.com/u/230437184?v=4";
+  const container = document.querySelector(".projects-container");
 
+  if (!container) return;
+
+  try {
+    const response = await fetch(`https://api.github.com/users/${username}/repos`);
+    const repos = await response.json();
+
+    container.innerHTML = ""; // clear placeholder cards
+
+    repos.slice(0, 6).forEach(repo => {
+      const card = document.createElement("div");
+      card.classList.add("project-card");
+
+      card.innerHTML = `
+        <img src="${avatarUrl}" alt="profile" class="gh-avatar">
+        <h3>${repo.name}</h3>
+        <p>${repo.description ? repo.description : "No description provided."}</p>
+        <a href="${repo.html_url}" target="_blank" class="project-link">View on GitHub</a>
+      `;
+
+      container.appendChild(card);
+    });
+  } catch (err) {
+    console.error("Error fetching GitHub repos:", err);
+    container.innerHTML = "<p>Unable to load projects at the moment.</p>";
+  }
+});
+
+function filterProjects() {
+  const input = document.getElementById('searchInput');
+  const filter = input.value.toLowerCase();
+  const ul = document.getElementById('projectList');
+  const projects = ul.getElementsByTagName('li');
+
+  for (let i = 0; i < projects.length; i++) {
+    const projectName = projects[i].innerText.toLowerCase();
+    if (projectName.includes(filter)) {
+      projects[i].style.display = '';
+    } else {
+      projects[i].style.display = 'none';
+    }
+  }
+}

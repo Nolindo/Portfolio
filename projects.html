@@ -13,7 +13,7 @@
     <nav>
       <ul class="nav-links">
         <button id="modeToggle" class="mode-btn">🌙</button>
-        <li><a href="app.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="education.html">Education</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -24,28 +24,36 @@
   </header>
 
     <section id="projects" class="projects-section">
-  <h2 class="section-title">My Projects</h2>
-  <p class="section-subtitle">Here are some of my GitHub repositories and projects I’ve built.</p>
-
-  <div class="projects-container">
-      <div class="project-card">
-      <h3>Weather App</h3>
-      <p>A simple weather app built with HTML, CSS, and JavaScript using the OpenWeather API.</p>
-      <a href="https://github.com/Nolindo/weather-app" target="_blank" class="project-link">View on GitHub</a>
-    </div>
-
-    <div class="project-card">
-      <h3>Portfolio Website</h3>
-      <p>My personal portfolio site built from scratch with responsive design and animation effects.</p>
-      <a href="https://github.com/Nolindo/portfolio" target="_blank" class="project-link">View on GitHub</a>
-    </div>
-
-    <div class="project-card">
-      <h3>Todo List App</h3>
-      <p>A simple JavaScript-based task manager with local storage functionality.</p>
-      <a href="https://github.com/Nolindo/todo-app" target="_blank" class="project-link">View on GitHub</a>
-    </div>
+  <h2 class="section-title">My Github Projects</h2>
+   <br>
+   <input type="text" id="searchInput" placeholder="Filter projects..." onkeyup="filterProjeects()" style="border-radius: 5px;
+     padding: 5px; cursor: pointer;">
+   <br>
+   <br>
+    <div class="projects-container">
+  <div class="project-card">
+    <img src="https://avatars.githubusercontent.com/u/230437184?v=4" alt="profile" class="gh-avatar">
+    <h3>Weather App</h3>
+    <p>A simple weather app built with HTML, CSS, and JavaScript using the OpenWeather API.</p>
+    <a href="https://github.com/Nolindo/weather-app" target="_blank" class="project-link">View on GitHub</a>
   </div>
+
+  <div class="project-card">
+    <img src="https://avatars.githubusercontent.com/u/230437184?v=4" alt="profile" class="gh-avatar">
+    <h3>Portfolio Website</h3>
+    <p>My personal portfolio site built from scratch with responsive design and animation effects.</p>
+    <a href="https://github.com/Nolindo/portfolio" target="_blank" class="project-link">View on GitHub</a>
+  </div>
+
+  <div class="project-card">
+    <img src="https://avatars.githubusercontent.com/u/230437184?v=4" alt="profile" class="gh-avatar">
+    <h3>Todo List App</h3>
+    <p>A simple JavaScript-based task manager with local storage functionality.</p>
+    <a href="https://github.com/Nolindo/todo-app" target="_blank" class="project-link">View on GitHub</a>
+  </div>
+
+</div>
+
 </section>
  <script src="app.js" defer></script>
 </body>
